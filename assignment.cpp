@@ -1,4 +1,5 @@
-// Comparison of Matrix Multiplication
+// Comparison of the performances of serial and parallel
+// Matrix Multiplication algorithm implementations
 
 #include <iostream>
 #include <omp.h>

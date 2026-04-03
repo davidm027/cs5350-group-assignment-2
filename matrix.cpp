@@ -1,6 +1,11 @@
+#include "matrix.hpp"
 #include <iostream>
 #include <sstream>
-#include "matrix.hpp"
+
+Matrix::Matrix() {
+    this->rows = 0;
+    this->columns = 0;
+}
 
 Matrix::Matrix(int m, int n) {
     this->rows = m;
@@ -36,17 +41,16 @@ std::vector<int> Matrix::get_data() {
 }
 
 int Matrix::get_value_at(int row, int col) {
-    int idx = this->rows * row + col;
+    int idx = this->columns * row + col;
     return this->data[idx];
 }
 
 void Matrix::set_value_at(int row, int col, int val) {
-    int idx = this->rows * row + col;
+    int idx = this->columns * row + col;
     this->data[idx] = val;
 }
 
-std::ostream& operator<<(std::ostream& os, Matrix m)
-{
+std::ostream& operator<<(std::ostream& os, Matrix m) {
     for (unsigned int i = 0; i < m.get_rows(); i++) {
         if (i == 0) {
             os << "[ ";
@@ -54,9 +58,9 @@ std::ostream& operator<<(std::ostream& os, Matrix m)
             os << "  ";
         }
         for (unsigned int j = 0; j < m.get_columns(); j++) {
-            os << m.get_value_at(i ,j) << " ";
+            os << m.get_value_at(i, j) << " ";
         }
-        if (i == m.get_rows()-1) {
+        if (i == m.get_rows() - 1) {
             os << "]";
         }
         os << "\n";

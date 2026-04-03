@@ -1,12 +1,14 @@
-#include <vector>
 #include <string>
+#include <vector>
 
 class Matrix {
-private:
+   private:
     int rows;
     int columns;
     std::vector<int> data;
-public:
+
+   public:
+    Matrix();
     Matrix(int, int);
     Matrix(int, int, std::vector<int>);
     ~Matrix();

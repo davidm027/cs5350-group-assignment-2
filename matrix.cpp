@@ -2,11 +2,6 @@
 #include <iostream>
 #include <sstream>
 
-Matrix::Matrix() {
-    this->rows = 0;
-    this->columns = 0;
-}
-
 Matrix::Matrix(int m, int n) {
     this->rows = m;
     this->columns = n;

@@ -34,15 +34,49 @@ Matrix MM_ser(Matrix A, Matrix B) {
 }
 
 // Simple parallel algorithm
-void MM_Par() {
+Matrix MM_Par(Matrix A, Matrix B) {
+    int m = A.get_rows();
+    int n = A.get_columns();
+    int p = B.get_columns();
+
+    Matrix C(m, p);
+
+#pragma omp parallel for collapse(3)
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < p; j++) {
+            int temp = 0;
+            for (int k = 0; k < n; k++) {
+                int a = A.get_value_at(i, k);
+                int b = B.get_value_at(k, j);
+                int c = a * b;
+                temp += c;
+            }
+            C.set_value_at(i, j, temp);
+        }
+    }
+    return C;
 }
 
 // 1D Parallel algorithm
-void MM_1D() {
+Matrix MM_1D(Matrix A, Matrix B) {
+    int m = A.get_rows();
+    int n = A.get_columns();
+    int p = B.get_columns();
+
+    Matrix C(m, p);
+
+    return C;
 }
 
 // 2D Parallel algorithm
-void MM_2D() {
+Matrix MM_2D(Matrix A, Matrix B) {
+    int m = A.get_rows();
+    int n = A.get_columns();
+    int p = B.get_columns();
+
+    Matrix C(m, p);
+
+    return C;
 }
 
 int main() {

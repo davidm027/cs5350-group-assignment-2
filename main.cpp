@@ -64,15 +64,16 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
     omp_set_num_threads(p);
     int m = A.get_rows();
     int n = A.get_columns();
+    int b_columns = B.get_columns();
+    int number_of_rows_per_thread = A.get_rows() / p;
 
-    Matrix C(m, p);
+
+    Matrix C(m, b_columns);
 
     #pragma omp parallel shared(A, B, C)
     {
         int i, j , k;
         int thread_num = omp_get_thread_num();
-
-        int number_of_rows_per_thread = A.get_rows() / p;
 
         int start = thread_num * number_of_rows_per_thread;
         int end = thread_num * number_of_rows_per_thread + number_of_rows_per_thread;
@@ -82,7 +83,7 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
         }
 
         for (i = start; i < end ; i++) {
-            for (j = 0; j <  B.get_columns(); j++) {
+            for (j = 0; j <  b_columns; j++) {
                 int temp = 0;
                 for (k = 0; k < n; k++) {
                     int a = A.get_value_at(i, k);

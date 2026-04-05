@@ -58,15 +58,45 @@ Matrix MM_Par(Matrix A, Matrix B) {
 }
 
 // 1D Parallel algorithm
-Matrix MM_1D(Matrix A, Matrix B) {
+Matrix MM_1D(Matrix A, Matrix B, int p) {
+
+    if ( p > A.get_rows() ) p = A.get_rows();
+    omp_set_num_threads(p);
     int m = A.get_rows();
     int n = A.get_columns();
-    int p = B.get_columns();
 
     Matrix C(m, p);
 
+    #pragma omp parallel shared(A, B, C)
+    {
+        int i, j , k;
+        int thread_num = omp_get_thread_num();
+
+        int number_of_rows_per_thread = A.get_rows() / p;
+
+        int start = thread_num * number_of_rows_per_thread;
+        int end = thread_num * number_of_rows_per_thread + number_of_rows_per_thread;
+
+        if (thread_num == p - 1) {
+            end = A.get_rows();
+        }
+
+        for (i = start; i < end ; i++) {
+            for (j = 0; j <  B.get_columns(); j++) {
+                int temp = 0;
+                for (k = 0; k < n; k++) {
+                    int a = A.get_value_at(i, k);
+                    int b = B.get_value_at(k, j);
+                    int c = a * b;
+                    temp += c;
+                }
+                C.set_value_at(i, j, temp);
+            }
+        }
+      }
     return C;
-}
+    }
+
 
 // 2D Parallel algorithm
 Matrix MM_2D(Matrix A, Matrix B) {
@@ -84,7 +114,7 @@ int main() {
     Matrix a(2, 3, v);
     Matrix b(3, 2, v);
 
-    Matrix c = MM_ser(a, b);
+    Matrix c = MM_1D(a, b, 2);
     std::vector<int> v2 = {22, 28, 49, 64};
 
     std::cout << a << "\n";

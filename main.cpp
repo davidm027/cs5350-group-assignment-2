@@ -3,13 +3,13 @@
 
 #include <cassert>
 #include <iostream>
+#include <random>
 #include <vector>
 
 #include <omp.h>
 
-#include "matrix.hpp"
 #include <cmath>
-
+#include "matrix.hpp"
 
 // Serial algorithm
 // Matrix A (dims mxn) * Matrix B (dims nxp) = Matrix C (dims mxp)
@@ -43,7 +43,7 @@ Matrix MM_Par(Matrix A, Matrix B) {
 
     Matrix C(m, p);
 
-#pragma omp parallel for collapse(3)
+    #pragma omp parallel for
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
             int temp = 0;
@@ -61,31 +61,31 @@ Matrix MM_Par(Matrix A, Matrix B) {
 
 // 1D Parallel algorithm
 Matrix MM_1D(Matrix A, Matrix B, int p) {
-
-    if ( p > A.get_rows() ) p = A.get_rows();
+    if (p > A.get_rows())
+        p = A.get_rows();
     omp_set_num_threads(p);
     int m = A.get_rows();
     int n = A.get_columns();
     int b_columns = B.get_columns();
     int number_of_rows_per_thread = A.get_rows() / p;
 
-
     Matrix C(m, b_columns);
 
     #pragma omp parallel shared(A, B, C)
     {
-        int i, j , k;
+        int i, j, k;
         int thread_num = omp_get_thread_num();
 
         int start = thread_num * number_of_rows_per_thread;
-        int end = thread_num * number_of_rows_per_thread + number_of_rows_per_thread;
+        int end =
+            thread_num * number_of_rows_per_thread + number_of_rows_per_thread;
 
         if (thread_num == p - 1) {
             end = A.get_rows();
         }
 
-        for (i = start; i < end ; i++) {
-            for (j = 0; j <  b_columns; j++) {
+        for (i = start; i < end; i++) {
+            for (j = 0; j < b_columns; j++) {
                 int temp = 0;
                 for (k = 0; k < n; k++) {
                     int a = A.get_value_at(i, k);
@@ -96,10 +96,9 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
                 C.set_value_at(i, j, temp);
             }
         }
-      }
-    return C;
     }
-
+    return C;
+}
 
 // 2D Parallel algorithm
 Matrix MM_2D(Matrix A, Matrix B, int p) {
@@ -109,7 +108,7 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
     int n2 = B.get_columns();
 
     Matrix C(m1, n2);
-    int thread_dim = (int) std::sqrt(p);
+    int thread_dim = (int)std::sqrt(p);
     int number_of_rows_per_thread = A.get_rows() / thread_dim;
     int number_of_columns_per_thread = B.get_columns() / thread_dim;
 
@@ -122,7 +121,7 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
 
     #pragma omp parallel shared(A, B, C)
     {
-        int i, j , k;
+        int i, j, k;
         int thread_num = omp_get_thread_num();
 
         int row = thread_num / thread_dim;
@@ -133,21 +132,18 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
 
         int column_start = col * number_of_columns_per_thread;
 
-
-
         if (row == thread_dim - 1) {
             end = A.get_rows();
         }
 
         int end_column = column_start + number_of_columns_per_thread;
 
-        if (col == thread_dim -1) {
+        if (col == thread_dim - 1) {
             end_column = B.get_columns();
         }
 
-
         for (i = start; i < end; i++) {
-            for (j = column_start; j <  end_column; j++) {
+            for (j = column_start; j < end_column; j++) {
                 int temp = 0;
 
                 int k_start = col * (n1 / thread_dim);
@@ -160,14 +156,27 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
                 }
                 #pragma omp critical
                 {
-                temp += C.get_value_at(i, j);
-                C.set_value_at(i, j, temp);
+                    temp += C.get_value_at(i, j);
+                    C.set_value_at(i, j, temp);
                 }
-
-
             }
         }
     }
+    return C;
+}
+
+Matrix create_random_matrix(int rows, int columns, unsigned int seed = 5350) {
+    std::mt19937 rng(seed);
+    std::vector<int> v;
+
+    int size = rows * columns;
+    for (int i = 0; i < size; i++) {
+        int r = (int)rng() % 1000;
+        v.push_back(r);
+    }
+
+    Matrix C(rows, columns, v);
+
     return C;
 }
 

@@ -44,7 +44,6 @@ Matrix MM_Par(Matrix A, Matrix B) {
     Matrix C(m, p);
 
     #pragma omp parallel for
-    #pragma omp parallel for
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
             int temp = 0;
@@ -64,8 +63,6 @@ Matrix MM_Par(Matrix A, Matrix B) {
 Matrix MM_1D(Matrix A, Matrix B, int p) {
     if (p > A.get_rows())
         p = A.get_rows();
-    if (p > A.get_rows())
-        p = A.get_rows();
     omp_set_num_threads(p);
     int m = A.get_rows();
     int n = A.get_columns();
@@ -77,12 +74,9 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
     #pragma omp parallel shared(A, B, C)
     {
         int i, j, k;
-        int i, j, k;
         int thread_num = omp_get_thread_num();
 
         int start = thread_num * number_of_rows_per_thread;
-        int end =
-            thread_num * number_of_rows_per_thread + number_of_rows_per_thread;
         int end =
             thread_num * number_of_rows_per_thread + number_of_rows_per_thread;
 
@@ -92,22 +86,18 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
 
         for (i = start; i < end; i++) {
             for (j = 0; j < b_columns; j++) {
-                for (i = start; i < end; i++) {
-                    for (j = 0; j < b_columns; j++) {
-                        int temp = 0;
-                        for (k = 0; k < n; k++) {
-                            int a = A.get_value_at(i, k);
-                            int b = B.get_value_at(k, j);
-                            int c = a * b;
-                            temp += c;
-                        }
-                        C.set_value_at(i, j, temp);
-                    }
+                int temp = 0;
+                for (k = 0; k < n; k++) {
+                    int a = A.get_value_at(i, k);
+                    int b = B.get_value_at(k, j);
+                    int c = a * b;
+                    temp += c;
                 }
+                C.set_value_at(i, j, temp);
             }
         }
-        return C;
     }
+    return C;
 }
 
 // 2D Parallel algorithm
@@ -118,7 +108,6 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
     int n2 = B.get_columns();
 
     Matrix C(m1, n2);
-    int thread_dim = (int)std::sqrt(p);
     int thread_dim = (int)std::sqrt(p);
     int number_of_rows_per_thread = A.get_rows() / thread_dim;
     int number_of_columns_per_thread = B.get_columns() / thread_dim;
@@ -132,7 +121,6 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
 
     #pragma omp parallel shared(A, B, C)
     {
-        int i, j, k;
         int i, j, k;
         int thread_num = omp_get_thread_num();
 
@@ -151,80 +139,59 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
         int end_column = column_start + number_of_columns_per_thread;
 
         if (col == thread_dim - 1) {
-            if (col == thread_dim - 1) {
-                end_column = B.get_columns();
-            }
+            end_column = B.get_columns();
+        }
 
-            for (i = start; i < end; i++) {
-                for (j = column_start; j < end_column; j++) {
-                    for (j = column_start; j < end_column; j++) {
-                        int temp = 0;
+        for (i = start; i < end; i++) {
+            for (j = column_start; j < end_column; j++) {
+                int temp = 0;
 
-                        int k_start = col * (n1 / thread_dim);
-                        int k_end = k_start + (n1 / thread_dim);
-                        for (k = k_start; k < k_end; k++) {
-                            int a = A.get_value_at(i, k);
-                            int b = B.get_value_at(k, j);
-                            int c = a * b;
-                            temp += c;
-                        }
+                int k_start = col * (n1 / thread_dim);
+                int k_end = k_start + (n1 / thread_dim);
+                for (k = k_start; k < k_end; k++) {
+                    int a = A.get_value_at(i, k);
+                    int b = B.get_value_at(k, j);
+                    int c = a * b;
+                    temp += c;
+                }
                 #pragma omp critical
-                        {
-                            temp += C.get_value_at(i, j);
-                            C.set_value_at(i, j, temp);
-                            temp += C.get_value_at(i, j);
-                            C.set_value_at(i, j, temp);
-                        }
-                    }
+                {
+                    temp += C.get_value_at(i, j);
+                    C.set_value_at(i, j, temp);
                 }
             }
-            return C;
         }
+    }
+    return C;
+}
 
-        Matrix create_random_matrix(int rows, int columns,
-                                    unsigned int seed = 5350) {
-            std::mt19937 rng(seed);
-            std::vector<int> v;
+Matrix create_random_matrix(int rows, int columns, unsigned int seed = 5350) {
+    std::mt19937 rng(seed);
+    std::vector<int> v;
 
-            int size = rows * columns;
-            for (int i = 0; i < size; i++) {
-                int r = (int)rng() % 1000;
-                v.push_back(r);
-            }
+    int size = rows * columns;
+    for (int i = 0; i < size; i++) {
+        int r = (int)rng() % 1000;
+        v.push_back(r);
+    }
 
-            Matrix C(rows, columns, v);
+    Matrix C(rows, columns, v);
 
-            return C;
-        }
+    return C;
+}
 
-        Matrix create_random_matrix(int rows, int columns,
-                                    unsigned int seed = 5350) {
-            std::mt19937 rng(seed);
-            std::vector<int> v;
+int main() {
+    std::vector<int> v = {1, 2, 4, 5};
+    Matrix a(2, 2, v);
+    Matrix b(2, 2, v);
 
-            int size = rows * columns;
-            for (int i = 0; i < size; i++) {
-                int r = (int)rng() % 1000;
-                v.push_back(r);
-            }
+    Matrix c = MM_2D(a, b, 4);
+    std::vector<int> v2 = {1, 10, 4, 25};
 
-            Matrix C(rows, columns, v);
+    std::cout << a << "\n";
+    std::cout << b << "\n";
+    std::cout << c << "\n";
+    assert(c.get_data() == v2);
 
-            return C;
-        }
-
-        int main() {
-            std::vector<int> v = {1, 2, 4, 5};
-            Matrix a(2, 2, v);
-            Matrix b(2, 2, v);
-
-            Matrix c = MM_2D(a, b, 4);
-            std::vector<int> v2 = {1, 10, 4, 25};
-
-            std::cout << a << "\n";
-            std::cout << b << "\n";
-            std::cout << c << "\n";
-            assert(c.get_data() == v2);
-
-            return 0;
-        }
+    return 0;
+}

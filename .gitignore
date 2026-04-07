@@ -41,4 +41,8 @@
 *.dwo
 
 .vscode/
+<<<<<<< HEAD
 build/
+=======
+/CMakeLists.txt
+>>>>>>> 456deed (fixed 2d)

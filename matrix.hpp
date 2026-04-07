@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <ostream>
 
 class Matrix {
    private:

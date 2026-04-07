@@ -9,13 +9,13 @@
 #include <random>
 #include <vector>
 
-#include "ctrack.hpp"
+// #include "ctrack.hpp"
 #include "matrix.hpp"
 
 // Serial algorithm
 // Matrix A (dims mxn) * Matrix B (dims nxp) = Matrix C (dims mxp)
 Matrix MM_ser(Matrix A, Matrix B) {
-    CTRACK;
+    // CTRACK;
     int m = A.get_rows();
     int n = A.get_columns();
     int p = B.get_columns();
@@ -39,7 +39,7 @@ Matrix MM_ser(Matrix A, Matrix B) {
 
 // Simple parallel algorithm
 Matrix MM_Par(Matrix A, Matrix B) {
-    CTRACK;
+    // CTRACK;
     int m = A.get_rows();
     int n = A.get_columns();
     int p = B.get_columns();
@@ -64,7 +64,7 @@ Matrix MM_Par(Matrix A, Matrix B) {
 
 // 1D Parallel algorithm
 Matrix MM_1D(Matrix A, Matrix B, int p) {
-    CTRACK;
+    // CTRACK;
     if (p > A.get_rows())
         p = A.get_rows();
     omp_set_num_threads(p);
@@ -106,7 +106,6 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
 
 // 2D Parallel algorithm
 Matrix MM_2D(Matrix A, Matrix B, int p) {
-    CTRACK;
     int m1 = A.get_rows();
     int n1 = A.get_columns();
     int m2 = B.get_rows();
@@ -128,13 +127,10 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
     {
         int i, j, k;
         int thread_num = omp_get_thread_num();
-
         int row = thread_num / thread_dim;
         int col = thread_num % thread_dim;
-
         int start = row * number_of_rows_per_thread;
         int end = row * number_of_rows_per_thread + number_of_rows_per_thread;
-
         int column_start = col * number_of_columns_per_thread;
 
         if (row == thread_dim - 1) {
@@ -164,6 +160,60 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
                     temp += C.get_value_at(i, j);
                     C.set_value_at(i, j, temp);
                 }
+
+
+            }
+        }
+    }
+    return C;
+}
+
+Matrix MM_2D_second_version(Matrix A, Matrix B, int p) {
+    int m1 = A.get_rows();
+    int n1 = A.get_columns();
+    int m2 = B.get_rows();
+    int n2 = B.get_columns();
+    Matrix C(m1, n2);
+    int thread_dim = (int)std::sqrt(p);
+    int number_of_rows_per_thread = A.get_rows() / thread_dim;
+    int number_of_columns_per_thread = B.get_columns() / thread_dim;
+    omp_set_num_threads(p);
+
+    #pragma omp parallel shared(A, B, C)
+    {
+        int i, j, k;
+        int thread_num = omp_get_thread_num();
+        int row = thread_num / thread_dim;
+        int col = thread_num % thread_dim;
+        int start = row * number_of_rows_per_thread;
+        int end = row * number_of_rows_per_thread + number_of_rows_per_thread;
+        int column_start = col * number_of_columns_per_thread;
+        if (row == thread_dim - 1) {
+            end = A.get_rows();
+        }
+        int end_column = column_start + number_of_columns_per_thread;
+        if (col == thread_dim - 1) {
+            end_column = B.get_columns();
+        }
+
+        int local_rows = end - start;
+        int local_cols = end_column - column_start;
+
+        std::vector<std::vector<int>> local(local_rows, std::vector<int>(local_cols));
+
+        for (i = start; i < end; i++) {
+            for (j = column_start; j < end_column; j++) {
+                int temp = 0;
+                for (k = 0; k < n1; k++) {
+                    temp += A.get_value_at(i, k) * B.get_value_at(k, j);
+                }
+                local[(i - start)][ (j - column_start)] = temp;
+            }
+        }
+
+        for (i = start; i < end; i++) {
+            for (j = column_start; j < end_column; j++) {
+                C.set_value_at(i, j, local[(i - start)] [(j - column_start)]);
             }
         }
     }
@@ -186,27 +236,28 @@ Matrix create_random_matrix(int rows, int columns, unsigned int seed = 5350) {
 }
 
 int main() {
-    // std::vector<int> v = {1, 2, 4, 5};
-    // Matrix a(2, 2, v);
-    // Matrix b(2, 2, v);
+    std::vector<int> v = {1, 2, 4, 5};
+    Matrix a(2, 2, v);
+    Matrix b(2, 2, v);
 
-    // Matrix c = MM_2D(a, b, 4);
-    // std::vector<int> v2 = {1, 10, 4, 25};
+
+    Matrix c = MM_2D_second_version(a, b, 4);
+    std::vector<int> v2 = {9, 12, 24, 33};
+
 
     // std::cout << a << "\n";
     // std::cout << b << "\n";
     // std::cout << c << "\n";
     // assert(c.get_data() == v2);
 
-    Matrix a = create_random_matrix(1024, 1024);
-    Matrix b = create_random_matrix(1024, 1024);
-
-    Matrix c1 = MM_ser(a, b);
-    Matrix c2 = MM_Par(a, b);
-    Matrix c3 = MM_1D(a, b, 4);
-    Matrix c4 = MM_2D(a, b, 4);
-
-    ctrack::result_print();
+    // Matrix a = create_random_matrix(1024, 1024);
+    // Matrix b = create_random_matrix(1024, 1024);
+    //
+    // Matrix c1 = MM_ser(a, b);
+    // Matrix c2 = MM_Par(a, b);
+    // Matrix c3 = MM_1D(a, b, 4);
+    // Matrix c4 = MM_2D(a, b, 4);
+    //
 
     return 0;
 }

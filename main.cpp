@@ -3,19 +3,21 @@
 
 #include <omp.h>
 
+#include <boost/program_options.hpp>
 #include <cassert>
 #include <cmath>
+#include <fstream>
 #include <iostream>
 #include <random>
 #include <vector>
 
-// #include "ctrack.hpp"
+#include "ctrack.hpp"
 #include "matrix.hpp"
 
 // Serial algorithm
 // Matrix A (dims mxn) * Matrix B (dims nxp) = Matrix C (dims mxp)
 Matrix MM_ser(Matrix A, Matrix B) {
-    // CTRACK;
+    CTRACK;
     int m = A.get_rows();
     int n = A.get_columns();
     int p = B.get_columns();
@@ -39,7 +41,7 @@ Matrix MM_ser(Matrix A, Matrix B) {
 
 // Simple parallel algorithm
 Matrix MM_Par(Matrix A, Matrix B) {
-    // CTRACK;
+    CTRACK;
     int m = A.get_rows();
     int n = A.get_columns();
     int p = B.get_columns();
@@ -64,7 +66,7 @@ Matrix MM_Par(Matrix A, Matrix B) {
 
 // 1D Parallel algorithm
 Matrix MM_1D(Matrix A, Matrix B, int p) {
-    // CTRACK;
+    CTRACK;
     if (p > A.get_rows())
         p = A.get_rows();
     omp_set_num_threads(p);
@@ -106,6 +108,7 @@ Matrix MM_1D(Matrix A, Matrix B, int p) {
 
 // 2D Parallel algorithm
 Matrix MM_2D(Matrix A, Matrix B, int p) {
+    CTRACK;
     int m1 = A.get_rows();
     int n1 = A.get_columns();
     int m2 = B.get_rows();
@@ -160,8 +163,6 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
                     temp += C.get_value_at(i, j);
                     C.set_value_at(i, j, temp);
                 }
-
-
             }
         }
     }
@@ -169,6 +170,7 @@ Matrix MM_2D(Matrix A, Matrix B, int p) {
 }
 
 Matrix MM_2D_second_version(Matrix A, Matrix B, int p) {
+    CTRACK;
     int m1 = A.get_rows();
     int n1 = A.get_columns();
     int m2 = B.get_rows();
@@ -199,7 +201,8 @@ Matrix MM_2D_second_version(Matrix A, Matrix B, int p) {
         int local_rows = end - start;
         int local_cols = end_column - column_start;
 
-        std::vector<std::vector<int>> local(local_rows, std::vector<int>(local_cols));
+        std::vector<std::vector<int>> local(local_rows,
+                                            std::vector<int>(local_cols));
 
         for (i = start; i < end; i++) {
             for (j = column_start; j < end_column; j++) {
@@ -207,13 +210,13 @@ Matrix MM_2D_second_version(Matrix A, Matrix B, int p) {
                 for (k = 0; k < n1; k++) {
                     temp += A.get_value_at(i, k) * B.get_value_at(k, j);
                 }
-                local[(i - start)][ (j - column_start)] = temp;
+                local[(i - start)][(j - column_start)] = temp;
             }
         }
 
         for (i = start; i < end; i++) {
             for (j = column_start; j < end_column; j++) {
-                C.set_value_at(i, j, local[(i - start)] [(j - column_start)]);
+                C.set_value_at(i, j, local[(i - start)][(j - column_start)]);
             }
         }
     }
@@ -235,29 +238,63 @@ Matrix create_random_matrix(int rows, int columns, unsigned int seed = 5350) {
     return C;
 }
 
-int main() {
-    std::vector<int> v = {1, 2, 4, 5};
-    Matrix a(2, 2, v);
-    Matrix b(2, 2, v);
+int main(int argc, const char* argv[]) {
+    // set up CLI args (makes it easier to run as a script)
+    int m, n, q, P;
 
+    std::string fname;
 
-    Matrix c = MM_2D_second_version(a, b, 4);
-    std::vector<int> v2 = {9, 12, 24, 33};
+    namespace po = boost::program_options;
+    po::options_description desc("Allowed options");
+    desc.add_options()("help,h", "produce help message")(
+        "rows-A,m", po::value<int>(), "set amount of rows for matrix A")(
+        "columns-A,n", po::value<int>(), "set amount of columns for matrix A")(
+        "columns-B,q", po::value<int>(), "set amount of columns for matrix B")(
+        "processors,P", po::value<int>(),
+        "set number of processors for the parallel algorithms to use")(
+        "output-file,o", po::value<std::string>()->default_value("results.txt"),
+        "name of file containing ctrack output");
 
+    po::variables_map vm;
+    po::store(po::parse_command_line(argc, argv, desc), vm);
+    po::notify(vm);
 
-    // std::cout << a << "\n";
-    // std::cout << b << "\n";
-    // std::cout << c << "\n";
-    // assert(c.get_data() == v2);
+    if (vm.count("help")) {
+        std::cout << desc << '\n';
+    } else {
+        if (vm.count("rows-A") && vm.count("columns-A") &&
+            vm.count("columns-B") && vm.count("processors")) {
+            m = vm["rows-A"].as<int>();
+            n = vm["columns-A"].as<int>();
+            q = vm["columns-B"].as<int>();
+            P = vm["processors"].as<int>();
 
-    // Matrix a = create_random_matrix(1024, 1024);
-    // Matrix b = create_random_matrix(1024, 1024);
-    //
-    // Matrix c1 = MM_ser(a, b);
-    // Matrix c2 = MM_Par(a, b);
-    // Matrix c3 = MM_1D(a, b, 4);
-    // Matrix c4 = MM_2D(a, b, 4);
-    //
+            if (vm.count("rows-A")) {
+                fname = vm["output-file"].as<std::string>();
+            }
+        } else {
+            std::cout << "Not all variables were set.\n";
+            return -1;
+        }
+    }
+
+    // actual code to run everything
+    Matrix a = create_random_matrix(m, n);
+    Matrix b = create_random_matrix(n, q);
+    Matrix c1 = MM_ser(a, b);
+    Matrix c2 = MM_Par(a, b);
+    Matrix c3 = MM_1D(a, b, P);
+    Matrix c4 = MM_2D_second_version(a, b, P);
+
+    std::string results = ctrack::result_as_string();
+    std::ofstream out;
+    out.open(fname);
+    out << "m: " << m << ", ";
+    out << "n: " << n << ", ";
+    out << "q: " << q << ", ";
+    out << "P: " << P << "\n";
+    out << results;
+    out.close();
 
     return 0;
 }

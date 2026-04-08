@@ -240,7 +240,7 @@ Matrix create_random_matrix(int rows, int columns, unsigned int seed = 5350) {
 
 int main(int argc, const char* argv[]) {
     // set up CLI args (makes it easier to run as a script)
-    int m, n, q, P;
+    int m, n, q, P, seed;
 
     std::string fname;
 
@@ -253,7 +253,8 @@ int main(int argc, const char* argv[]) {
         "processors,P", po::value<int>(),
         "set number of processors for the parallel algorithms to use")(
         "output-file,o", po::value<std::string>()->default_value("results.txt"),
-        "name of file containing ctrack output");
+        "name of file containing ctrack output")(
+        "seed,s", po::value<int>(), "set random seed for matrix generator");
 
     po::variables_map vm;
     po::store(po::parse_command_line(argc, argv, desc), vm);
@@ -272,6 +273,9 @@ int main(int argc, const char* argv[]) {
             if (vm.count("rows-A")) {
                 fname = vm["output-file"].as<std::string>();
             }
+            if (vm.count("seed")) {
+                seed = vm["seed"].as<int>();
+            }
         } else {
             std::cout << "Not all variables were set.\n";
             return -1;
@@ -279,8 +283,8 @@ int main(int argc, const char* argv[]) {
     }
 
     // actual code to run everything
-    Matrix a = create_random_matrix(m, n);
-    Matrix b = create_random_matrix(n, q);
+    Matrix a = create_random_matrix(m, n, seed);
+    Matrix b = create_random_matrix(n, q, seed);
     Matrix c1 = MM_ser(a, b);
     Matrix c2 = MM_Par(a, b);
     Matrix c3 = MM_1D(a, b, P);
@@ -289,6 +293,7 @@ int main(int argc, const char* argv[]) {
     std::string results = ctrack::result_as_string();
     std::ofstream out;
     out.open(fname);
+    out << "--- SEED: " << seed << "---\n";
     out << "m: " << m << ", ";
     out << "n: " << n << ", ";
     out << "q: " << q << ", ";

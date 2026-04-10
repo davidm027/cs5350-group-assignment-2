@@ -5,6 +5,7 @@
 
 #include <boost/program_options.hpp>
 #include <cassert>
+#include <chrono>
 #include <cmath>
 #include <fstream>
 #include <iostream>
@@ -282,13 +283,23 @@ int main(int argc, const char* argv[]) {
         }
     }
 
+    std::cout << "seed: " << seed << ", ";
+    std::cout << "m: " << m << ", ";
+    std::cout << "n: " << n << ", ";
+    std::cout << "q: " << q << ", ";
+    std::cout << "P: " << P << "\n";
+
     // actual code to run everything
+    std::chrono::steady_clock::time_point start =
+        std::chrono::steady_clock::now();
     Matrix a = create_random_matrix(m, n, seed);
     Matrix b = create_random_matrix(n, q, seed);
     Matrix c1 = MM_ser(a, b);
     Matrix c2 = MM_Par(a, b);
     Matrix c3 = MM_1D(a, b, P);
     Matrix c4 = MM_2D_second_version(a, b, P);
+    std::chrono::steady_clock::time_point end =
+        std::chrono::steady_clock::now();
 
     std::string results = ctrack::result_as_string();
     std::ofstream out;
@@ -300,6 +311,17 @@ int main(int argc, const char* argv[]) {
     out << "P: " << P << "\n";
     out << results;
     out.close();
+
+    auto duration = std::chrono::duration<double>(end - start);
+    const auto hrs = std::chrono::duration_cast<std::chrono::hours>(duration);
+    const auto mins =
+        std::chrono::duration_cast<std::chrono::minutes>(duration - hrs);
+    const auto secs =
+        std::chrono::duration_cast<std::chrono::seconds>(duration - hrs - mins);
+    const auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(
+        duration - hrs - mins - secs);
+    std::cout << "Duration: " << hrs.count() << "h" << mins.count() << "min"
+              << secs.count() << "." << ms.count() << "sec" << std::endl;
 
     return 0;
 }

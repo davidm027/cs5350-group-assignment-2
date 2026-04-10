@@ -1,0 +1,3 @@
+/home/davidmalone/assignment-2/build/CMakeFiles/MyAssignment.dir
+/home/davidmalone/assignment-2/build/CMakeFiles/edit_cache.dir
+/home/davidmalone/assignment-2/build/CMakeFiles/rebuild_cache.dir

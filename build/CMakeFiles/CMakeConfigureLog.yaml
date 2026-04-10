@@ -1,0 +1,2178 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/home/davidmalone/conda_envs/cmake-env/sbin/"
+      - "/home/davidmalone/conda_envs/cmake-env/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/bin/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/sbin/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/uname"
+      - "/home/davidmalone/conda_envs/cmake-env/sbin/uname"
+      - "/home/davidmalone/conda_envs/cmake-env/uname"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/bin/uname"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/sbin/uname"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/uname"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/uname"
+      - "/apps/anaconda3/condabin/uname"
+      - "/usr/lib64/qt-3.3/bin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1160.31.1.el7.x86_64 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/home/davidmalone/conda_envs/cmake-env/sbin/"
+      - "/home/davidmalone/conda_envs/cmake-env/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/bin/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/sbin/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    searched_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/gmake"
+      - "/home/davidmalone/conda_envs/cmake-env/sbin/gmake"
+      - "/home/davidmalone/conda_envs/cmake-env/gmake"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/bin/gmake"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/sbin/gmake"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/gmake"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/gmake"
+      - "/apps/anaconda3/condabin/gmake"
+      - "/usr/lib64/qt-3.3/bin/gmake"
+      - "/usr/local/bin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/home/davidmalone/conda_envs/cmake-env/sbin/"
+      - "/home/davidmalone/conda_envs/cmake-env/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/bin/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/sbin/"
+      - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/"
+    found: "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/davidmalone/conda_envs/cmake-env/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/davidmalone/assignment-2/build/CMakeFiles/4.3.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-ar"
+      - "ar"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-strip"
+      - "strip"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-strip"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-ld"
+      - "ld"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ld"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-nm"
+      - "nm"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-nm"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-objdump"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-objcopy"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-readelf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    searched_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-dlltool"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/usr/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-dlltool"
+      - "/usr/sbin/x86_64-conda-linux-gnu-dlltool"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-dlltool"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/dlltool"
+      - "/apps/anaconda3/condabin/dlltool"
+      - "/usr/lib64/qt-3.3/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/usr/pkg/bin/dlltool"
+      - "/opt/ibutils/bin/dlltool"
+      - "/home/davidmalone/.local/bin/dlltool"
+      - "/home/davidmalone/bin/dlltool"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-addr2line"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    searched_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-tapi"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-tapi"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-tapi"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-tapi"
+      - "/usr/bin/x86_64-conda-linux-gnu-tapi"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-tapi"
+      - "/usr/sbin/x86_64-conda-linux-gnu-tapi"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-tapi"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-tapi"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-tapi"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-tapi"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/tapi"
+      - "/apps/anaconda3/condabin/tapi"
+      - "/usr/lib64/qt-3.3/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/sbin/tapi"
+      - "/usr/pkg/bin/tapi"
+      - "/opt/ibutils/bin/tapi"
+      - "/home/davidmalone/.local/bin/tapi"
+      - "/home/davidmalone/bin/tapi"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "x86_64-conda-linux-gnu-gcc-ar-13"
+      - "x86_64-conda-linux-gnu-gcc-ar13"
+      - "x86_64-conda-linux-gnu-gcc-ar"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    searched_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/usr/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/usr/sbin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-gcc-ar-13.4"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/usr/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/usr/sbin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-gcc-ar-13"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/usr/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/usr/sbin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-gcc-ar13"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-gcc-ar13"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "x86_64-conda-linux-gnu-gcc-ranlib"
+    candidate_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/"
+      - "/apps/anaconda3/condabin/"
+      - "/usr/lib64/qt-3.3/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/usr/pkg/bin/"
+      - "/opt/ibutils/bin/"
+      - "/home/davidmalone/.local/bin/"
+      - "/home/davidmalone/bin/"
+    searched_directories:
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/usr/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/usr/sbin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-gcc-ranlib-13.4"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/usr/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/usr/sbin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-gcc-ranlib-13"
+      - "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/apps/anaconda3/condabin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/usr/lib64/qt-3.3/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/usr/local/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/usr/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/usr/local/sbin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/usr/sbin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/usr/pkg/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/opt/ibutils/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/home/davidmalone/.local/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+      - "/home/davidmalone/bin/x86_64-conda-linux-gnu-gcc-ranlib13"
+    found: "/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO"
+      binary: "/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /home/davidmalone/conda_envs/cmake-env/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/davidmalone/conda_envs/cmake-env/lib -Wl,-rpath-link,/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/lib"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO'
+        
+        Run Build Command(s): /home/davidmalone/conda_envs/cmake-env/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6e23/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b6e23.dir/build.make CMakeFiles/cmTC_b6e23.dir/build
+        gmake[1]: Entering directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO'
+        Building CXX object CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /home/davidmalone/conda_envs/cmake-env/include    -v -o CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -c /home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 13.4.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.4.0 (conda-forge gcc 13.4.0-18) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-v' '-o' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_b6e23.dir/'
+         /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/cc1plus -quiet -v -iprefix /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/ -isysroot /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /home/davidmalone/conda_envs/cmake-env/include /home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6e23.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o /tmp/ccu4NsA5.s
+        GNU C++17 (conda-forge gcc 13.4.0-18) version 13.4.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++"
+        ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward"
+        ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include"
+        ignoring nonexistent directory "/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed"
+        ignoring nonexistent directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/davidmalone/conda_envs/cmake-env/include
+         /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++
+         /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu
+         /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward
+         /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include
+         /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed
+         /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 9af22e21a3bbbd593c418eb6b342332b
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-v' '-o' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_b6e23.dir/'
+         /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccu4NsA5.s
+        GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1
+        COMPILER_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-v' '-o' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b6e23
+        /home/davidmalone/conda_envs/cmake-env/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6e23.dir/link.txt --verbose=1
+        Reading specs from /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 13.4.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.4.0 (conda-forge gcc 13.4.0-18) 
+        COMPILER_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-L/home/davidmalone/conda_envs/cmake-env/lib' '-v' '-o' 'cmTC_b6e23' '-shared-libgcc' '-dumpdir' 'cmTC_b6e23.'
+         /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/collect2 -plugin /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH8uwGe.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6e23 /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o -L/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0 -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../.. -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/davidmalone/conda_envs/cmake-env/lib -rpath-link /home/davidmalone/conda_envs/cmake-env/lib -v CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/davidmalone/conda_envs/cmake-env/lib
+        collect2 version 13.4.0
+        /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/ld -plugin /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH8uwGe.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6e23 /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o -L/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0 -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../.. -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/davidmalone/conda_envs/cmake-env/lib -rpath-link /home/davidmalone/conda_envs/cmake-env/lib -v CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/davidmalone/conda_envs/cmake-env/lib
+        GNU ld (GNU Binutils) 2.45.1
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-L/home/davidmalone/conda_envs/cmake-env/lib' '-v' '-o' 'cmTC_b6e23' '-shared-libgcc' '-dumpdir' 'cmTC_b6e23.'
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /home/davidmalone/conda_envs/cmake-env/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/davidmalone/conda_envs/cmake-env/lib -Wl,-rpath-link,/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/lib -v -Wl,-v CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b6e23
+        gmake[1]: Leaving directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/davidmalone/conda_envs/cmake-env/include]
+          add: [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++]
+          add: [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward]
+          add: [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include]
+          add: [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed]
+          add: [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/include] ==> [/home/davidmalone/conda_envs/cmake-env/include]
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++]
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward]
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include]
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed]
+        collapse include dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/davidmalone/conda_envs/cmake-env/include;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed;/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/davidmalone/conda_envs/cmake-env/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6e23/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b6e23.dir/build.make CMakeFiles/cmTC_b6e23.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-rUZysO']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -isystem /home/davidmalone/conda_envs/cmake-env/include    -v -o CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -c /home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 13.4.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.4.0 (conda-forge gcc 13.4.0-18) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-v' '-o' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_b6e23.dir/']
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/cc1plus -quiet -v -iprefix /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/ -isysroot /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /home/davidmalone/conda_envs/cmake-env/include /home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6e23.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -o /tmp/ccu4NsA5.s]
+        ignore line: [GNU C++17 (conda-forge gcc 13.4.0-18) version 13.4.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/include]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++/backward]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/include-fixed]
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 9af22e21a3bbbd593c418eb6b342332b]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-v' '-o' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_b6e23.dir/']
+        ignore line: [ /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccu4NsA5.s]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
+        ignore line: [COMPILER_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-v' '-o' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b6e23]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6e23.dir/link.txt --verbose=1]
+        ignore line: [Reading specs from /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 13.4.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374227605/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.4.0 (conda-forge gcc 13.4.0-18) ]
+        ignore line: [COMPILER_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-isystem' '/home/davidmalone/conda_envs/cmake-env/include' '-L/home/davidmalone/conda_envs/cmake-env/lib' '-v' '-o' 'cmTC_b6e23' '-shared-libgcc' '-dumpdir' 'cmTC_b6e23.']
+        link line: [ /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/collect2 -plugin /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH8uwGe.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6e23 /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o -L/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0 -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../.. -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/davidmalone/conda_envs/cmake-env/lib -rpath-link /home/davidmalone/conda_envs/cmake-env/lib -v CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/davidmalone/conda_envs/cmake-env/lib]
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccH8uwGe.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b6e23] ==> ignore
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o] ==> obj [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../..] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../..]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/davidmalone/conda_envs/cmake-env/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/davidmalone/conda_envs/cmake-env/lib] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o] ==> obj [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o]
+          arg [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/davidmalone/conda_envs/cmake-env/lib] ==> ignore
+        ignore line: [collect2 version 13.4.0]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/ld -plugin /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH8uwGe.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6e23 /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o -L/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0 -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../.. -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/davidmalone/conda_envs/cmake-env/lib -rpath-link /home/davidmalone/conda_envs/cmake-env/lib -v CMakeFiles/cmTC_b6e23.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o /home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/davidmalone/conda_envs/cmake-env/lib]
+        linker tool for 'CXX': /home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/ld
+        collapse obj [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o]
+        collapse obj [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o]
+        collapse obj [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/lib] ==> [/home/davidmalone/conda_envs/cmake-env/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc] ==> [/home/davidmalone/conda_envs/cmake-env/lib/gcc]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../lib] ==> [/home/davidmalone/conda_envs/cmake-env/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../lib/gcc/x86_64-conda-linux-gnu/13.4.0/../../..] ==> [/home/davidmalone/conda_envs/cmake-env/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtbeginS.o;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0/crtendS.o;/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/home/davidmalone/conda_envs/cmake-env/lib;/home/davidmalone/conda_envs/cmake-env/lib/gcc/x86_64-conda-linux-gnu/13.4.0;/home/davidmalone/conda_envs/cmake-env/lib/gcc;/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/lib;/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/lib;/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/home/davidmalone/conda_envs/cmake-env/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.4.0/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i"
+      binary: "/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davidmalone/conda_envs/cmake-env/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/davidmalone/conda_envs/cmake-env/lib -Wl,-rpath-link,/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/lib"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i'
+        
+        Run Build Command(s): /home/davidmalone/conda_envs/cmake-env/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a04ce/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a04ce.dir/build.make CMakeFiles/cmTC_a04ce.dir/build
+        gmake[1]: Entering directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i'
+        Building CXX object CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davidmalone/conda_envs/cmake-env/include -fopenmp -std=c++17 -o CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o -c /home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i/OpenMPTryFlag.cpp
+        Linking CXX static library libcmTC_a04ce.a
+        /home/davidmalone/conda_envs/cmake-env/bin/cmake -P CMakeFiles/cmTC_a04ce.dir/cmake_clean_target.cmake
+        /home/davidmalone/conda_envs/cmake-env/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a04ce.dir/link.txt --verbose=1
+        a - CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ar qc libcmTC_a04ce.a -v CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ranlib libcmTC_a04ce.a
+        gmake[1]: Leaving directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/FindOpenMP.cmake:377 (message)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:15 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/davidmalone/conda_envs/cmake-env/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a04ce/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a04ce.dir/build.make CMakeFiles/cmTC_a04ce.dir/build]
+        ignore line: [gmake[1]: Entering directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davidmalone/conda_envs/cmake-env/include -fopenmp -std=c++17 -o CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o -c /home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX static library libcmTC_a04ce.a]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/cmake -P CMakeFiles/cmTC_a04ce.dir/cmake_clean_target.cmake]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a04ce.dir/link.txt --verbose=1]
+        ignore line: [a - CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ar qc libcmTC_a04ce.a -v CMakeFiles/cmTC_a04ce.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ranlib libcmTC_a04ce.a]
+        ignore line: [gmake[1]: Leaving directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-ks0b0i']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/FindOpenMP.cmake:574 (try_compile)"
+      - "/home/davidmalone/conda_envs/cmake-env/share/cmake-4.3/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-S7m0UQ"
+      binary: "/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-S7m0UQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davidmalone/conda_envs/cmake-env/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/davidmalone/conda_envs/cmake-env/lib -Wl,-rpath-link,/home/davidmalone/conda_envs/cmake-env/lib -L/home/davidmalone/conda_envs/cmake-env/lib"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-S7m0UQ'
+        
+        Run Build Command(s): /home/davidmalone/conda_envs/cmake-env/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c63b6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c63b6.dir/build.make CMakeFiles/cmTC_c63b6.dir/build
+        gmake[1]: Entering directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-S7m0UQ'
+        Building CXX object CMakeFiles/cmTC_c63b6.dir/OpenMPCheckVersion.cpp.o
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davidmalone/conda_envs/cmake-env/include -fopenmp -std=c++17 -o CMakeFiles/cmTC_c63b6.dir/OpenMPCheckVersion.cpp.o -c /home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-S7m0UQ/OpenMPCheckVersion.cpp
+        Linking CXX static library libcmTC_c63b6.a
+        /home/davidmalone/conda_envs/cmake-env/bin/cmake -P CMakeFiles/cmTC_c63b6.dir/cmake_clean_target.cmake
+        /home/davidmalone/conda_envs/cmake-env/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c63b6.dir/link.txt --verbose=1
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ar qc libcmTC_c63b6.a CMakeFiles/cmTC_c63b6.dir/OpenMPCheckVersion.cpp.o
+        /home/davidmalone/conda_envs/cmake-env/bin/x86_64-conda-linux-gnu-ranlib libcmTC_c63b6.a
+        gmake[1]: Leaving directory `/home/davidmalone/assignment-2/build/CMakeFiles/CMakeScratch/TryCompile-S7m0UQ'
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/lib/cmake/Boost-1.85.0/BoostConfig.cmake:141 (find_package)"
+      - "/home/davidmalone/conda_envs/cmake-env/lib/cmake/Boost-1.85.0/BoostConfig.cmake:215 (boost_find_component)"
+      - "CMakeLists.txt:16 (find_package)"
+    name: "boost_headers"
+    configs:
+      -
+        filename: "boost_headers.cps"
+        kind: "cps"
+      -
+        filename: "boost_headersConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "boost_headers-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "1.85.0"
+      version_complete: "1.85.0"
+      exact: true
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "/home/davidmalone/conda_envs/cmake-env/lib/cmake"
+      names:
+        - "boost_headers"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/boost_headersConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/boost_headers-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib64/cps/boost_headers.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib/cps/boost_headers.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/share/cps/boost_headers.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/boost_headersConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/boost_headers-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib64/cps/boost_headers.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cps/boost_headers.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/share/cps/boost_headers.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_headers-1.85.0/boost_headersConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_headers-1.85.0/boost_headers-config.cmake"
+      mode: "config"
+      version: "1.85.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/davidmalone/conda_envs/cmake-env"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/home/davidmalone/conda_envs/cmake-env/lib/cmake/Boost-1.85.0/BoostConfig.cmake:141 (find_package)"
+      - "/home/davidmalone/conda_envs/cmake-env/lib/cmake/Boost-1.85.0/BoostConfig.cmake:262 (boost_find_component)"
+      - "CMakeLists.txt:16 (find_package)"
+    name: "boost_program_options"
+    configs:
+      -
+        filename: "boost_program_options.cps"
+        kind: "cps"
+      -
+        filename: "boost_program_optionsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "boost_program_options-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "1.85.0"
+      version_complete: "1.85.0"
+      exact: true
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "/home/davidmalone/conda_envs/cmake-env/lib/cmake"
+      names:
+        - "boost_program_options"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/boost_program_optionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/boost_program_options-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib64/cps/boost_program_options.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib/cps/boost_program_options.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/share/cps/boost_program_options.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/boost_program_optionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/boost_program_options-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib64/cps/boost_program_options.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cps/boost_program_options.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/share/cps/boost_program_options.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_program_options-1.85.0/boost_program_optionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_program_options-1.85.0/boost_program_options-config.cmake"
+      mode: "config"
+      version: "1.85.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/davidmalone/conda_envs/cmake-env"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:16 (find_package)"
+    name: "Boost"
+    components:
+      -
+        name: "program_options"
+        required: true
+        found: true
+    configs:
+      -
+        filename: "Boost.cps"
+        kind: "cps"
+      -
+        filename: "boost.cps"
+        kind: "cps"
+      -
+        filename: "BoostConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "boost-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Boost"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib64/cps/Boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib64/cps/boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib/cps/Boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/lib/cps/boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/share/cps/Boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/assignment-2/build/CMakeFiles/pkgRedirects/share/cps/boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib64/cps/Boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib64/cps/boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cps/Boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cps/boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/share/cps/Boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/share/cps/boost.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_wserialization-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_wserialization-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_wave-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_wave-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_url-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_url-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_unit_test_framework-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_unit_test_framework-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_type_erasure-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_type_erasure-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_timer-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_timer-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_thread-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_thread-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_test_exec_monitor-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_test_exec_monitor-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_system-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_system-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_stacktrace_noop-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_stacktrace_noop-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_stacktrace_basic-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_stacktrace_basic-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_stacktrace_addr2line-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_stacktrace_addr2line-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_serialization-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_serialization-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_regex-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_regex-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_random-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_random-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_program_options-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_program_options-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_prg_exec_monitor-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_prg_exec_monitor-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_nowide-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_nowide-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_mpi-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_mpi-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_tr1l-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_tr1l-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_tr1f-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_tr1f-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_tr1-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_tr1-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_c99l-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_c99l-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_c99f-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_c99f-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_c99-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_math_c99-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_log_setup-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_log_setup-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_log-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_log-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_locale-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_locale-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_json-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_json-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_iostreams-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_iostreams-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_headers-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_headers-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_graph_parallel-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_graph_parallel-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_graph-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_graph-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_filesystem-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_filesystem-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_fiber-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_fiber-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_exception-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_exception-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_date_time-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_date_time-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_coroutine-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_coroutine-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_contract-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_contract-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_context-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_context-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_container-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_container-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_cobalt-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_cobalt-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_chrono-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_chrono-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_charconv-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_charconv-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_atomic-1.85.0/BoostConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/boost_atomic-1.85.0/boost-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/home/davidmalone/conda_envs/cmake-env/lib/cmake/Boost-1.85.0/BoostConfig.cmake"
+      mode: "config"
+      version: "1.85.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/home/davidmalone/conda_envs/cmake-env/x86_64-conda-linux-gnu/sysroot/usr"
+      ENV{PATH}:
+        - "/home/davidmalone/conda_envs/cmake-env/bin"
+        - "/apps/anaconda3/condabin"
+        - "/usr/lib64/qt-3.3/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/usr/pkg/bin"
+        - "/opt/ibutils/bin"
+        - "/home/davidmalone/.local/bin"
+        - "/home/davidmalone/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/home/davidmalone/conda_envs/cmake-env/bin/../x86_64-conda-linux-gnu/sysroot/usr"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/davidmalone/conda_envs/cmake-env"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/home/davidmalone/conda_envs/cmake-env"
+...

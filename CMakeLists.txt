@@ -6,39 +6,27 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(CTRACK_DISABLE_EXECUTION_POLICY TRUE)
-
 if(POLICY CMP0167)
   cmake_policy(SET CMP0167 NEW)
 endif()
 
-
-include(FetchContent)
-
-FetchContent_Declare(
-    ctrack
-    GIT_REPOSITORY https://github.com/Compaile/ctrack.git
-    GIT_TAG main
-)
-
-FetchContent_MakeAvailable(ctrack)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 
 find_package(OpenMP REQUIRED)
-find_package(ctrack REQUIRED)
-find_package(Boost REQUIRED COMPONENTS program_options)
+find_package(Boost CONFIG REQUIRED COMPONENTS program_options)
 
 add_executable(MyAssignment
     main.cpp
     matrix.cpp
 )
 
-include_directories(${Boost_INCLUDE_DIRS})
+target_include_directories(MyAssignment PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/ctrack/include)
 
-target_include_directories(MyAssignment PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_options(MyAssignment PRIVATE ${OpenMP_CXX_FLAGS})
 
 target_link_libraries(MyAssignment
     PRIVATE
-        OpenMP::OpenMP_CXX
-        ctrack::ctrack
-        ${Boost_PROGRAM_OPTIONS_LIBRARY}
+        Boost::program_options
+        ${OpenMP_CXX_FLAGS}
+        ${OpenMP_CXX_LIBRARIES}
 )
